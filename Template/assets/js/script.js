@@ -1,10 +1,10 @@
 var students = [{
         name: 'tran van a',
-        className: '.net'
+        className: 'net'
     },
     {
         name: 'tran van b',
-        className: '.net'
+        className: 'net'
     },
     {
         name: 'tran van c',
@@ -41,8 +41,10 @@ var students = [{
 ];
 var subjectFilter = document.querySelector('#subject__filter');
 subjectFilter.addEventListener('change', () => {
+
     var contentFilter = students.filter((item) => {
         return item.className === subjectFilter.value;
+
     });
     render(contentFilter);
 });
